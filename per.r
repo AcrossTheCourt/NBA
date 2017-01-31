@@ -29,7 +29,7 @@ db <- subset(db,MP>0)
 #Put them in the same directory and set the working directory so R can find the files
 #B-ref changed its structure, so scraping is much more difficult. Apologies.
 dt <- read.csv(file="teamstats.csv", stringsAsFactors=FALSE)
-dtm <- read.csv(file='teamstatsmisc.csv',sttringsAsFactors=FALSE)
+dtm <- read.csv(file='teamstatsmisc.csv',stringsAsFactors=FALSE)
 
 #Team names in the player file do not match with the team names displayed in dt or dtm
 #The lines below correct this. It's wise to double-check these with your selected season.
