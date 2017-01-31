@@ -1,4 +1,4 @@
-#Instal the XML package to scrape data
+#Install the XML package to scrape data
 library(XML)
 #Choose your season of interest
 Season <- 2016
