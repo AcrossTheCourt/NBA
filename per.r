@@ -18,6 +18,9 @@ for(i in c(1:25)){
 }
 colnames(db)[12] <- 'X3P'
 
+#Sometimes a player with 0 MP is listed, and he'll screw up the entire season's calculation. Delete these guys.
+db <- subset(db,MP>0)
+
 #Load team data
 #IMPORTANT: you have to create these files first (or use the example ones for 2016)
 #Go to the season of interest on: http://www.basketball-reference.com/leagues/NBA_2017.html
