@@ -16,6 +16,8 @@ d <- d[order(d$stats.Date),]
 dch <- subset(d,stats.GmSc>29)
 #Create label vector
 ply.names <- dch$stats.Player
+#Replace NAs with 0s for 3PT%
+dch$stats.3P. <- ifelse(is.na(dch$stats.3P.),0,dch$stats.3P.)
 #Select only the variables of interest. The order is critical.
 dch <- subset(dch,select=c(stats.GmSc,stats.PTS,stats.PF,stats.2P.,stats.3P.,stats.FT.,stats.ORB,
                 stats.DRB,stats.2PA,stats.3PA,stats.FTA,stats.AST,stats.TOV,stats.BLK,stats.STL))
