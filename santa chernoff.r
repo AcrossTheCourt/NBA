@@ -40,7 +40,7 @@ dch <- subset(dch,select=c(stats.GmSc,stats.PTS,stats.PF,stats.3P.,stats.2P.,sta
 
 #Plot. The legend text may need to be tweaked with different inputs. Change face.type to 1 for non-Santa faces and 0 for colorless.
 faces(dch,labels=ply.names,face.type=2,
-      main='Best Chrismas Day Games by Game Score Since 1984 (source: b-ref)')
+      main='Best Christmas Day Games by Game Score Since 1984 (source: b-ref)')
 text(-110,-86,'Height of face: Game Score',adj=0,cex=.8)
 text(-110,-94,'Width of face: Points',adj=0,cex=.8)
 text(-110,-102,'Face shape: Fouls',adj=0,cex=.8)
